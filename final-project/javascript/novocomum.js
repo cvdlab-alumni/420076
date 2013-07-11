@@ -23,12 +23,12 @@ return cylinder;
 };
 
 var NOVOCOMUM = function(r,h){
-	var shelf_1 = COLOR([101/255,67/255,33/255])(CYLINDER(r/1.216216,h/35.88))
-	var shelf_2 = T([0])([r/(6.428571*2)])(COLOR([101/255,67/255,33/255])(CYLINDER(r/1.096761,h/35.88)))
-	var shelf_3 = T([0])([r/(3.214285*2)])(COLOR([101/255,67/255,33/255])(CYLINDER(r,h/35.88)))
-	var panel_1 = COLOR([101/255,67/255,33/255])(CUBOID([r/1.216216,h,h/35.88]))
-	var panel_2 = COLOR([101/255,67/255,33/255])(CUBOID([h/35.88,h,r/(1.216216/2)]))
-	var panel_3 = COLOR([101/255,67/255,33/255])(CUBOID([r/1.216216,h/4.357142,h/35.88]))
+	var shelf_1 = COLOR([150/255,51/255,0])(CYLINDER(r/1.216216,h/35.88))
+	var shelf_2 = T([0])([r/(6.428571*2)])(COLOR([150/255,51/255,0])(CYLINDER(r/1.096761,h/35.88)))
+	var shelf_3 = T([0])([r/(3.214285*2)])(COLOR([150/255,51/255,0])(CYLINDER(r,h/35.88)))
+	var panel_1 = COLOR([150/255,51/255,0])(CUBOID([r/1.216216,h,h/35.88]))
+	var panel_2 = COLOR([150/255,51/255,0])(CUBOID([h/35.88,h,r/(1.216216/2)]))
+	var panel_3 = COLOR([150/255,51/255,0])(CUBOID([r/1.216216,h/4.357142,h/35.88]))
 	var panel_1_t = T([0])([-r/1.216216])(panel_1)
 	var panel_2_t = T([2])([-r/1.216216])(panel_2)
 	var panels = STRUCT([panel_1_t,panel_2_t,panel_3])
