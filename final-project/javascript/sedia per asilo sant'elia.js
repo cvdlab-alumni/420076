@@ -175,12 +175,12 @@ var vertical_back_support = STRUCT([central_back_support,sx_back_support,rx_back
 
 //SEANCE
 
-var seance1 = COLOR([150/255,75/255,0])(T([0,1,2])([-1.8,-1.2,0.1])(CUBOID([3.6,2,0.2])))
+var seance1 = COLOR([150/255,75/255,0])(T([0,1,2])([-1.8,-1.2,0.1])(CUBOID([3.6,1.7,0.2])))
 
-var p11 = [[0,0,0],[0,1.3,0],[3.6,1.3,0],[3.6,0,0]]
+var p11 = [[0,0,0],[0,1.9,0],[3.6,1.9,0],[3.6,0,0]]
 var c11 = BEZIER(S0)(p11)
 
-var p12 = [[0,0,0.2],[0,1.3,0.2],[3.6,1.3,0.2],[3.6,0,0.2]]
+var p12 = [[0,0,0.2],[0,1.9,0.2],[3.6,1.9,0.2],[3.6,0,0.2]]
 var c12 = BEZIER(S0)(p12)
 
 var p13 = [[0,0,0],[0,0,0],[3.6,0,0],[3.6,0,0]]
@@ -202,7 +202,7 @@ var surf1214 = MAP(s1214)(Dom2D)
 var s4 = COLOR([150/255,75/255,0])(surf1214)
 
 
-var seance2 = T([0,1,2])([-1.8,0.8,0.1])(STRUCT([s2,s3,s4]))
+var seance2 = T([0,1,2])([-1.8,0.5,0.1])(STRUCT([s2,s3,s4]))
 
 var seance = T([2])([0.14])(STRUCT([seance1,seance2]))
 
